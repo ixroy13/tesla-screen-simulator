@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo2.svg">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <main class="center">
+            <div class="car-control">
+                <div class="drive-bar">
+
+                    <div class="left">
+                        <div class="gear">
+                            <span id="p" class="active">P</span>
+                            <span id="r">R</span>
+                            <span id="n">N</span>
+                            <span id="d">D</span>
+                        </div>
+                        <div class="autopilot">
+                            <img src="images/autopilot.svg" alt="wheel">
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <span class="batteryLevel">81<i class="fa-solid fa-percent"></i></span>
+                        <div class="battery-icon">
+                            <i class="fa-solid fa-battery-three-quarters"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="recu-bar"></div>
+
+                <div class="park-mode">
+                    <div class="car-model">
+                        <div class="frunk center">
+                            <p id="open-frunk" class="open-tf">open</p>
+                        </div>
+                        <div class="trunk center">
+                            <p id="open-trunk" class="open-tf">open</p>
+                        </div>
+                        <div class="charge-btn"><i class="fa-solid fa-bolt"></i></div>
+                    </div>
+                </div>
+
+                <div class="reverse-mode">
+                    
+                </div>
+
+                <div class="drive-mode"></div>
+
+            </div>
+            <div class="main-screen">
+                <div class="top-bar">
+                    <div class="lock-mode">
+                        <i class="fa-solid fa-unlock"></i>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="time">
+                        <span>21:37</span>
+                    </div>
+                    <div class="temp-outside">
+                        <span>26°</span>
+                    </div>
+                    <div class="video">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div class="guard-mode">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Optimus</span>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.775467642591!2d13.788064716009243!3d52.392620553413515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a83b58ff7450e7%3A0xdab4209b373c0b00!2sTesla%20Gigafactory%20Berlin-Brandenburg!5e0!3m2!1spl!2spl!4v1667064908991!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="reverse-camera center">
+                        <img src="images/camera-view.jpg" alt="camera view">
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <header>
+            <nav>
+                <div class="main">
+                    <img class="car-settings" src="images/car-icon.svg" alt="">
+                </div>
+    
+                <div class="temp1">
+                    <div class="arrow-left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div id="temp1" class="temperature">
+                        <span class="temperature1">20.0</span>
+                    </div>
+                    <div class="arrow-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+    
+                <div class="apps">
+                    <div class="fav-apps">
+                        <div class="phone center">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="calendar center">
+                            <img src="images/calendar.svg" alt="calendar">
+                        </div>
+                        <div class="spotify center">
+                            <i class="fa-brands fa-spotify"></i>
+                        </div>
+                        <div class="camera center">
+                            <img class="camera-icon" src="images/camera-icon.svg" alt="">
+                        </div>
+                    </div>
+    
+                    <div class="more-apps center">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="rec-apps">
+                        <div class="charging center">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+    
+                        <div class="netflix center">
+                            <img src="images/netflix-icon.svg" alt="netflix">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="temp2 temp1">
+                    <div class="arrow-left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div id="temp2" class="temperature">
+                        <span class="temperature2">19.0</span>
+                    </div>
+                    <div class="arrow-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+    
+                <div class="volume temp1">
+                    <div class="arrow-left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="volume-level">
+                        <div class="slider">
+                            <input type="range" min="0" max="100" value="20"  step="10" name="range" id="range">
+                        </div>
+                    </div>
+                    <div class="volume volume-icon">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class="arrow-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+</body>
+</html>

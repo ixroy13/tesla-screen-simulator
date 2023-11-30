@@ -1,0 +1,445 @@
+:root {
+    --black: #000;
+    --dark-gray: #0e0e0e;
+    --def-gray: #171717;
+    --white: #fff;
+    --green: #25cb55;
+    --red: #ca021a;
+    --light-blue: #24c0ff;
+    --blue: #0091cc;
+    --light-gray: #525252;
+    --yellow: #ffbd0a;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    border: 8px solid var(--white);
+    height: 100vh;
+    border-radius: 40px;
+    padding: 50px;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ctrl L */
+nav {
+    width: 100%;
+    height: 100px;
+    background: var(--black);
+    display: flex;
+    color: var(--light-gray);
+    padding: 0 30px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+header span, #temp1, #temp2 {
+    color: var(--white);
+}
+
+.reverse-mode {
+    display: none;
+}
+
+/* CAR SETTING ICON */
+
+.main {
+    height: 100%;
+    width: 15%;
+    padding-left: 20px;
+    background: var(--black);
+    cursor: pointer;
+}
+
+.car-settings {
+    width: 50px;
+    filter: invert(52%) sepia(6%) saturate(94%) hue-rotate(251deg) brightness(90%) contrast(95%);
+}
+
+/* TEMPERATURE SETTINGS */
+
+.temp1 {
+    background: var(--black);
+    width: 15%;
+}
+
+#temp1, #temp2 {
+    font-size: 300%;
+}
+.temp1 div {
+    width: 33.3%;
+    justify-content: center;
+}
+
+.temp1 i, .temp2 i {
+    font-size: 100%;
+}
+
+.arrow-left, .arrow-right {
+    cursor: pointer;
+}
+
+/* APPS */
+
+.apps {
+    width: 40%;
+    height: 100%;
+    padding: 0 40px;
+    background: var(--black);
+}
+
+.apps div {
+    cursor: pointer;
+}
+
+.fav-apps {
+    width: 60%;
+    height: 100%;
+}
+
+.fav-apps div, .rec-apps div {
+    width: 100%;
+    height: 100%;
+}
+
+.more-apps {
+    width: 10%;
+    height: 100%;
+    color: var(--white);
+}
+
+.rec-apps {
+    width: 30%;
+    height: 100%;
+}
+
+.calendar img, .camera img {
+    width: 40px;
+}
+
+.fav-apps div i {
+    font-size: 190%;
+}
+
+.fa-phone {
+    color: var(--green)
+}
+
+.fa-spotify {
+    font-size: 250% !important;
+    color: #1DB954;
+}
+
+.camera-icon {
+    width: 45% !important;
+}
+
+.more-apps i {
+    padding: 5px;
+    border: 3px solid var(--light-gray);
+    border-radius: 5px;
+}
+
+.rec-apps div {
+    width: 100%;
+}
+
+.rec-apps i {
+    font-size: 170%;
+    color: var(--yellow);
+    translate: -10px;
+}
+
+.netflix img {
+    width: 30%;
+    translate: -30px;
+}
+
+/* VOLUME BUTTON */
+
+.fa-volume-high {
+    font-size: 190% !important;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.volume-level {
+    display: none;
+    transition: .3s;
+}
+
+.volume-level.open {
+    display: block;
+    position: fixed;
+    top: 80%;
+    left: 83%;
+    transition: .5s;
+}
+
+.slider {
+    width: 100px;
+    height: 30px;
+    background: var(--white);
+    border-radius: 50px;
+}
+
+/* LEFT SITE */
+
+main {
+    width: 100%;
+    height: 90%;
+}
+
+.car-control {
+    width: 39%;
+    height: 100%;
+    background: var(--white);
+    border-radius: 20px 0 0 0;
+}
+
+.drive-bar {
+    display: flex;
+    width: 100%;
+    background: var(--white);
+    border-radius: 20px 0 0 0;
+}
+
+.drive-bar div {
+    margin-right: 10px;
+}
+
+.main-screen {
+    width: 61%;
+    height: 100%;
+    border-radius: 0 20px 0  0 !important;
+    overflow: hidden;
+}
+
+.left, .right {
+    width: 50%;
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+    padding-right: 0px;
+}
+
+.left span, .right span {
+    font-weight: 600;
+    color: var(--black);
+    opacity: 0.15;
+}
+
+.right span {
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.active {
+    color: var(--black);
+    opacity: 1 !important;
+}
+
+.autopilot {
+    width: 50px;
+    height: 50px;
+}
+
+.autopilot img, .autopilot g {
+    width: 17px;
+}
+
+.fa-battery-three-quarters {
+    font-size: 130%;
+}
+
+.recu-bar {
+    margin-left: 5%;
+    width: 90%;
+    height: 3px;
+    background: #E3E1E3;
+    border-radius: 15px;
+}
+
+/* PARK MODE */
+
+.park-mode {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/tesla-top-view.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+}
+
+.car-model button {
+    all: unset;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.trunk, .frunk  {
+    position: relative;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    user-select: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background: #e1e1e1;
+    height: 50px;
+    font-size: 70%;
+}
+
+.car-model p {
+    letter-spacing: 1px;
+}
+
+.frunk {
+    translate: 0px -240px;
+}
+
+.trunk {
+    translate: 0px 630%;
+}
+
+.charge-btn {
+    position: relative;
+    height: 90px;
+    padding: 0 10px;
+    translate: -85px 150px;
+    font-size: 180%;
+}
+
+.open-tf {
+    letter-spacing: .5px;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+/* REVERSE MODE */
+
+.car-model.hidden {
+    display: none;
+}
+.reverse-mode {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.speed {
+    font-size: 650%;
+    color: var(--black);
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    font-weight: 500;
+}
+
+/* RIGHT SITE */
+
+.top-bar {
+    width: 57.8%;
+    height: 40px;
+    padding: 10px 20px;
+    color: var(--black);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    position: fixed;
+    overflow: hidden;
+}
+
+.top-bar div {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.fa-lock {
+    display: none !important;
+}
+
+.time span, .temp-outside span {
+    font-weight: 600;
+}
+
+.fa-circle {
+    color: var(--red);
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 3px;
+    translate: 0 -3px;
+}
+
+.fa-user {
+    color: var(--light-gray);
+    margin-right: 15px;
+}
+
+.user span {
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+/* MAP */
+
+.map {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20px 0 0;
+    visibility: visible;
+}
+
+.reverse-camera {
+    position: fixed;
+    width: 57.8%;
+    height: 76.5%;
+    top: 10%;
+    display: none;
+}
+
+.reverse-camera img {
+    scale: .45;
+    border-radius: 15px;
+    translate: -23% -27%;
+}
